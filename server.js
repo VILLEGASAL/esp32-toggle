@@ -11,7 +11,6 @@ app.use(cors({
 
     origin: ["http://localhost:5500", "http://127.0.0.1:5500", "https://villegasal.github.io/esp32-GUI/"],   
     methods: ["GET", "POST", "PUT", "DELETE"],
-    credentials: true
 }));
 
 app.get("/toggle", (req, res) => {
