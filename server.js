@@ -13,6 +13,11 @@ app.use(cors({
     allowedHeaders: ["Content-Type", "Authorization"]
 }));
 
+app.get("/view-state", (req, res) => {
+
+    res.send(led_state);
+});
+
 app.get("/toggle", (req, res) => {
     led_state = (led_state === "0") ? "1" : "0";
 
